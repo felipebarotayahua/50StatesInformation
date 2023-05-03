@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 States - USA</title>
+    <link rel="icon" type="image/png" href="assets/USAFlag.png">
+
+    <!-- Libraries -->
+    <!-- fontawesome -->
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <!-- Less -->
+    <link rel="stylesheet/less" type="text/css" href="/css/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AXIOS API -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/states.js" defer></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- CSS/LESS -->
+    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/states.css">
+</head>
+
+<body>
+    <!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #7c6e52 !important;">
+    <div class="container-fluid">
+      <!-- Navbar brand/logo -->
+      <a class="navbar-brand" href="#">50 States of America</a>
+  
+      <!-- Hamburger menu button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Information.html">Information</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- header -->
+
+
+
+<H1>United States of America</H1>
+<p>Begin your search to learn more!</p>
+<p>Try Indiana (case sensitive)</p>
+
+<!-- Search Feature -->
+<div class="search-container">
+    <input type="text" class="form-control" placeholder="Search for a state..." aria-label="Search for a state..." id="search-input">
+    <button class="btn btn-outline-secondary" type="button" id="search-button"><i class="fa fa-search"></i></button>
+  </div>
+
+
+  <!-- modal for search feature. -->
+  <div class="modal fade" id="state-modal" tabindex="-1" aria-labelledby="state-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="state-modal-label"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Capital: <span id="capital"></span></p>
+          <p>Major Industry: <span id="majorindustry"></span></p>
+          <p>Tourist Attraction: <span id="attraction"></span></p>
+          <p>Population: <span id="population"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- Content/Map -->
+<div class="image-container">
+    <img src="assets/usamap.png" alt="United States of America">
+  </div>
+
+
+
+<!-- Cards/Carousal? -->
+
+
+   
+</body>
+
+</html>

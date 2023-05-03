@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 States Quiz</title>
+    <link rel="icon" type="image/png" href="assets/USAFlag.png">
+
+    <!-- Libraries -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-5SrvxgRJ9OKbi+HY5jH/w4Wyq3aJ6lkcu+6BGfUjBJJbDDzWfMd9IJeKj+Q1ffwv1JFxtfCjYpZWWBk+CbARjg==" crossorigin="anonymous" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <!-- Less -->
+    <link rel="stylesheet/less" type="text/css" href="/css/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AXIOS API -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/states.js" defer></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- CSS/LESS -->
+    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/states.css">
+
+    <script src="js/quiz.js" defer></script>
+
+</head>
+<body>
+   <!-- Header -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #7c6e52 !important;">
+    <div class="container-fluid">
+      <!-- Navbar brand/logo -->
+      <a class="navbar-brand" href="#">50 States of America</a>
+  
+      <!-- Hamburger menu button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Information.html">Information</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- Header -->
+    <h2 class="heading">50 State Quiz!</h2>
+  
+<!-- quiz -->
+
+<div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  
+  
+  
+
+
+ 
+</body>
+</html>
